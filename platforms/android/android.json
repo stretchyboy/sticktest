@@ -1,0 +1,39 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"Serial\"><param name=\"android-package\" value=\"fr.drangies.cordova.serial.Serial\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-serial": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-serial.Serial",
+      "file": "plugins/cordova-plugin-serial/www/serial.js",
+      "pluginId": "cordova-plugin-serial",
+      "clobbers": [
+        "window.serial"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-serial": "0.0.3"
+  }
+}

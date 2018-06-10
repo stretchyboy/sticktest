@@ -44,7 +44,7 @@ var app = {
 
         console.log('Received Event: ' + id);
 
-
+        /*
         var errorCallback = function (message) {
             alert('Error: ' + message);
         };
@@ -87,27 +87,26 @@ var app = {
                 errorCallback
             );
 
-            /*var buffer = Buffer.from(message.buffer);
+            //var buffer = Buffer.from(message.buffer);
 
-            try {
-                port.write(buffer, function (err) {
-                    if (err) {
-                        return console.log('Error on write: ', err.message);
-                    }
-                    console.log('message written');
-                });
+            //try {
+                //port.write(buffer, function (err) {
+                 //   if (err) {
+               //         return console.log('Error on write: ', err.message);
+             //       }
+           //         console.log('message written');
+         //       });
 
                 // Open errors will be emitted as an error event
-                port.on('error', function (err) {
-                    console.log('Error: ', err.message);
-                });
-            } catch (err) {
-
-                console.log('Error: ', err.message);
-
-            }*/
+       //         port.on('error', function (err) {
+     //               console.log('Error: ', err.message);
+    //            });
+  //          } catch (err) {
+//
+  //              console.log('Error: ', err.message);
+//
+            //}
         }
-
 
         serial.requestPermission({
                 vid: '16d0',
@@ -126,6 +125,7 @@ var app = {
             },
             errorCallback
         );
+        */
 
     }
 };
